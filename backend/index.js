@@ -1,9 +1,11 @@
 const connectToMongo=require('./db');
+require('dotenv').config();
 connectToMongo();
 
 const express = require('express')
+
 const app = express()
-const port = 3000
+const port = 5000;
 
 // middleware is used here in order to print reuest body
 app.use(express.json());
